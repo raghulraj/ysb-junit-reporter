@@ -100,8 +100,8 @@ function XMLReporter(options) {
 
 		for (var t = 0; t < testArray.length; t++) {
 			xw.startElement('testcase');
-			xw.writeAttribute('className', testArray[t].description);
-			xw.writeAttribute('name', testArray[t].description);
+			xw.writeAttribute('className', testArray[t].description.split("|")[1]);
+			xw.writeAttribute('name', testArray[t].description.split("|")[1]);
 			xw.writeAttribute('time', testArray[t].duration / 1000);
 			if(allResults[t] != "true") {
 				if(allResults[t] == 'Skipped'){
