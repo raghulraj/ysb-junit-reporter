@@ -120,7 +120,7 @@ function XMLReporter(options) {
 			xw.endElement(); //testcase
 		}
 
-		xw.writeElement('system-out', 'beta');
+		//xw.writeElement('system-out', 'beta');
 		xw.endElement(); //testsuite
 		xw.endDocument();
 
