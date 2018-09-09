@@ -1,1 +1,1 @@
-# ysb-junit-reporter
+# ysb-protractor-junit-reporter
